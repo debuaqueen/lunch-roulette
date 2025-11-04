@@ -1,0 +1,19 @@
+body { font-family: 'Comic Sans MS', cursive; }
+.wheel {
+  width: 300px; height: 300px;
+  margin: 0 auto;
+  background: radial-gradient(#fff, #ffeb3b);
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  animation: glow 2s infinite alternate;
+}
+.dish {
+  position: relative;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.emoji { font-size: 5rem; display: block; }
+.cal { font-weight: bold; color: #d00; }
+@keyframes glow { from { box-shadow: 0 0 20px #ff0; } to { box-shadow: 0 0 40px #f00; } }
+#spinBtn { transition: all 0.3s; }
+#spinBtn:active { transform: scale(0.9); }
