@@ -1,0 +1,20 @@
+<%- include('layout') %>
+<div class="text-center">
+  <h1 class="display-1 mb-4">Lunch Roulette</h1>
+  
+  <div id="wheel" class="wheel mb-5">
+    <div class="dish">
+      <span class="emoji"><%= dish.emoji %></span>
+      <h2><%= dish.name %></h2>
+      <p class="cal"><%= dish.calories %> cal</p>
+    </div>
+  </div>
+
+  <form method="POST" action="/spin">
+    <button id="spinBtn" class="btn btn-danger btn-lg px-5">
+      SPIN AGAIN
+    </button>
+  </form>
+
+  <p class="mt-4 text-muted">No repeats in last 3 spins!</p>
+</div>
